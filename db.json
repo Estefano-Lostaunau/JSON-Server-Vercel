@@ -1,0 +1,597 @@
+
+{
+    "patient-appointments": [
+      {
+        "name": "Juan Pérez",
+        "age": 28,
+        "typeOfCare": "First date",
+        "hour": "09:00 AM",
+        "diagnosis": "Evaluación inicial",
+        "alert": "-"
+      },
+      {
+        "name": "María García",
+        "age": 40,
+        "typeOfCare": "First date",
+        "hour": "09:30 AM",
+        "diagnosis": "Revisión general",
+        "alert": "-"
+      },
+      {
+        "name": "Luisa Rodríguez",
+        "age": 35,
+        "typeOfCare": "First date",
+        "hour": "10:00 AM",
+        "diagnosis": "Examen inicial",
+        "alert": "-"
+      },
+      {
+        "name": "Pedro Sánchez",
+        "age": 45,
+        "typeOfCare": "First date",
+        "hour": "10:30 AM",
+        "diagnosis": "Consulta médica",
+        "alert": "-"
+      },
+      {
+        "name": "Ana Martínez",
+        "age": 32,
+        "typeOfCare": "First date",
+        "hour": "11:00 AM",
+        "diagnosis": "Chequeo completo",
+        "alert": "-"
+      },
+      {
+        "name": "Carlos Gómez",
+        "age": 55,
+        "typeOfCare": "First date",
+        "hour": "11:30 AM",
+        "diagnosis": "Examen de rutina",
+        "alert": "-"
+      },
+      {
+        "name": "Laura Fernández",
+        "age": 30,
+        "typeOfCare": "First date",
+        "hour": "12:00 PM",
+        "diagnosis": "Consulta general",
+        "alert": "-"
+      },
+      {
+        "name": "José López",
+        "age": 48,
+        "typeOfCare": "First date",
+        "hour": "12:30 PM",
+        "diagnosis": "Evaluación inicial",
+        "alert": "-"
+      },
+      {
+        "name": "Mónica Ramirez",
+        "age": 25,
+        "typeOfCare": "First date",
+        "hour": "01:00 PM",
+        "diagnosis": "Examen de ingreso",
+        "alert": "-"
+      },
+      {
+        "name": "Diego Castro",
+        "age": 38,
+        "typeOfCare": "First date",
+        "hour": "01:30 PM",
+        "diagnosis": "Consulta médica",
+        "alert": "-"
+      }
+    ],
+  
+    "doctors": [
+      {
+        "id": 1,
+        "name": "Maria",
+        "lastname": "Gonzalez",
+        "fee": 100,
+        "gender": "F",
+        "image": "https://raw.githubusercontent.com/ClaudioSandro/Images-FakeAPI/main/doctora1.jpg",
+        "title": "https://s3-sa-east-1.amazonaws.com/doctoralia.pe/doctor/6d38db/6d38db9e2611c042a2b379f9aa075c85_large.jpg",
+        "college_number": "12345",
+        "RNE": "RNE123",
+        "undergraduate": "General Medicine",
+        "specialty": "Endocrinology",
+        "sub_speciality": "Diabetes",
+        "code_of_doctor": "d202400001",
+        "subscription_id": 1,
+        "email": "mariagonzalez@example.com",
+        "password": "123456"
+      },
+      {
+        "id": 2,
+        "name": "Juan",
+        "lastname": "Lopez",
+        "fee": 120,
+        "gender": "M",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/portrait-of-a-happy-young-doctor-in-his-clinic-royalty-free-image-1661432441.jpg?crop=0.66698xw:1xh;center,top&resize=1200:*",
+        "title": "https://idunmedicinaestetica.es/wp-content/uploads/cual-es-el-equivalente-a-medico-general-en-estados-unidos-1.webp",
+        "college_number": "54321",
+        "RNE": "RNE543",
+        "undergraduate": "General Medicine",
+        "specialty": "Endocrinology",
+        "sub_speciality": "Thyroid",
+        "code_of_doctor": "d202400002",
+        "subscription_id": 2,
+        "email": "juanlopez@example.com",
+        "password": "password123"
+      },
+      {
+        "id": 3,
+        "name": "Laura",
+        "lastname": "Martinez",
+        "fee": 90,
+        "gender": "F",
+        "image": "https://static.vecteezy.com/system/resources/thumbnails/026/843/446/small/portrait-of-young-doctor-or-nurse-female-with-uniform-on-studio-background-medical-woman-concept-ai-generated-free-photo.jpeg",
+        "title": "https://s3-sa-east-1.amazonaws.com/doctoralia.pe/doctor/3a025a/3a025a0e00d634193ba010610d941504_large.jpg",
+        "college_number": "98765",
+        "RNE": "RNE987",
+        "undergraduate": "General Medicine",
+        "specialty": "Endocrinology",
+        "sub_speciality": "Obesity",
+        "code_of_doctor": "d202400003",
+        "subscription_id": 3,
+        "email": "lauramartinez@example.com",
+        "password": "password456"
+      },
+      {
+        "id": 4,
+        "name": "Pedro",
+        "lastname": "Sanchez",
+        "fee": 110,
+        "gender": "M",
+        "image": "https://ahoradoctor.cl/wp-content/uploads/elementor/thumbs/diverse-medical-team-of-doctors-looking-at-camera-while-holding-clipboard-and-medical-files-q91hedrgoecd6roezsuj57fxuxgrvjgk482bfu8074.jpg",
+        "title": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/681abea2-21e6-44f4-9f13-43f09aa3ba1a/deygw0q-42578228-7525-4f9f-bf17-764eaa5421f3.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzY4MWFiZWEyLTIxZTYtNDRmNC05ZjEzLTQzZjA5YWEzYmExYVwvZGV5Z3cwcS00MjU3ODIyOC03NTI1LTRmOWYtYmYxNy03NjRlYWE1NDIxZjMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.lPv1Kbbi1xGfJC_E7l7QU7YZJ05P8ZsUZodKjykW9i8",
+        "college_number": "13579",
+        "RNE": "RNE135",
+        "undergraduate": "General Medicine",
+        "specialty": "Endocrinology",
+        "sub_speciality": "Hormones",
+        "code_of_doctor": "d202400004",
+        "subscription_id": 4,
+        "email": "pedrosanchez@example.com",
+        "password": "password789"
+      }
+    ],
+    "subscription": [
+      {
+        "id": 1,
+        "name": "Free",
+        "price": 0,
+        "description": "Free subscription",
+        "number_of_patients": 5
+      },
+      {
+        "id": 2,
+        "name": "Basic",
+        "price": 10,
+        "description": "Basic subscription",
+        "number_of_patients": 10
+      },
+      {
+        "id": 3,
+        "name": "Regular",
+        "price": 30,
+        "description": "Regular subscription",
+        "number_of_patients": 25
+      },
+      {
+        "id": 4,
+        "name": "Premium",
+        "price": 80,
+        "description": "Premium subscription",
+        "number_of_patients": 1000
+      }
+    ],
+  
+    "patients": [
+      {
+        "id": 1,
+        "name": "Carlos",
+        "lastname": "Perez",
+        "gender": "M",
+        "birthdate": "1990-01-01",
+        "civil_status": "Single",
+        "nationality": "Mexican",
+        "type_of_blood": "A+",
+        "image": "image5.jpg",
+        "phone": "987456321",
+        "email": "carlosperez1@gmail.com",
+        "password": "password741",
+        "disease_id": 1,
+        "medical_history_id": 1,
+        "occupation": "Engineer"
+      },
+      {
+        "id": 2,
+        "name": "Ana",
+        "lastname": "Garcia",
+        "gender": "F",
+        "birthdate": "1985-05-15",
+        "civil_status": "Married",
+        "nationality": "Spanish",
+        "type_of_blood": "B-",
+        "image": "image6.jpg",
+        "phone": "654987321",
+        "email": "anagarcia2@gmail.com",
+        "password": "password852",
+        "disease_id": 2,
+        "medical_history_id": 2,
+        "occupation": "Teacher"
+      },
+      {
+        "id": 3,
+        "name": "David",
+        "lastname": "Martinez",
+        "gender": "M",
+        "birthdate": "1978-11-20",
+        "civil_status": "Divorced",
+        "nationality": "American",
+        "type_of_blood": "O+",
+        "image": "image7.jpg",
+        "phone": "123456789",
+        "email": "davidmartinez3@gmail.com",
+        "password": "password963",
+        "disease_id": 3,
+        "medical_history_id": 3,
+        "occupation": "Accountant"
+      },
+      {
+        "id": 4,
+        "name": "Sofia",
+        "lastname": "Lopez",
+        "gender": "F",
+        "birthdate": "1995-09-10",
+        "civil_status": "Single",
+        "nationality": "Colombian",
+        "type_of_blood": "AB-",
+        "image": "image8.jpg",
+        "phone": "369852147",
+        "email": "sofialopez4@gmail.com",
+        "password": "password147",
+        "disease_id": 4,
+        "medical_history_id": 4,
+        "occupation": "Nurse"
+      }
+    ],
+    "diseases": [
+      {
+        "id": 1,
+        "name": "Diabetes"
+      },
+      {
+        "id": 2,
+        "name": "Thyroid Disorders"
+      },
+      {
+        "id": 3,
+        "name": "Polycystic Ovary Syndrome (PCOS)"
+      },
+      {
+        "id": 4,
+        "name": "Cushing's Syndrome"
+      }
+    ],
+    "medical_history": [
+      {
+        "id": 1,
+        "patient_id": 1,
+        "doctors_id": [
+          1
+        ],
+        "date": "2024-01-01",
+        "reason": "Check up for hormonal imbalance",
+        "symptoms": [
+          "Fatigue",
+          "Weight gain",
+          "Irregular menstrual periods"
+        ],
+        "personal_background": "No significant history",
+        "family_background": "Thyroid disorders",
+        "lab_results_id": 1,
+        "physical_test": "Elevated TSH levels",
+        "external_reports": [
+          "reports.pdf"
+        ],
+        "medical_exams": [
+          "glucose level test",
+          "blood lipid level test"
+        ],
+        "diagnostic": [
+          "Hypothyroidism"
+        ],
+        "treatment_and_medication":[
+          {
+            "drug_name": "Levothyroxine",
+            "quantity": "30 pills",
+            "concentration": "100mcg",
+            "frequency": "1 time a day",
+            "duration": "Ongoing"
+          }, {
+            "drug_name": "Metformin",
+            "quantity": "30 pills",
+            "concentration": "100mcg",
+            "frequency": "1 time a day",
+            "duration": "Ongoing"
+          },{
+            "drug_name": "Hydrocortisone",
+            "quantity": "30 pills",
+            "concentration": "10mg",
+            "frequency": "2 times a day",
+            "duration": "Ongoing"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "patient_id": 2,
+        "doctors_id": [
+          2
+        ],
+        "date": "2024-02-15",
+        "reason": "Evaluation for diabetes management",
+        "symptoms": [
+          "Increased thirst",
+          "Frequent urination",
+          "Blurry vision"
+        ],
+        "personal_background": [
+          "High blood pressure",
+          "Family history of diabetes"
+        ],
+        "family_background": [
+          "Diabetes"
+        ],
+        "lab_results_id": 2,
+        "physical_test": "High blood glucose levels",
+        "external_reports": [
+          "reports.pdf"
+        ],
+        "medical_exams": [
+          "glucose level test",
+          "blood lipid level test",
+          "progesterone level test"
+        ],
+        "diagnostic": [
+          "Type 2 Diabetes"
+        ],
+        "treatment_and_medication":[
+          {
+            "drug_name": "Metformin",
+            "quantity": "60 pills",
+            "concentration": "500mg",
+            "frequency": "2 times a day",
+            "duration": "Ongoing"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "patient_id": 3,
+        "doctors_id": [
+          3
+        ],
+        "date": "2024-03-10",
+        "reason": "Evaluation for PCOS",
+        "symptoms": [
+          "Irregular periods",
+          "Acne",
+          "Unwanted hair growth"
+        ],
+        "personal_background": [
+          "No significant history"
+        ],
+        "family_background": [
+          "No significant history"
+        ],
+        "lab_results_id": 3,
+        "physical_test": "Elevated androgen levels",
+        "external_reports": [
+          "reports.pdf"
+        ],
+        "medical_exams": [
+          "glucose level test",
+          "blood lipid level test"
+        ],
+        "diagnostic": [
+          "Polycystic Ovary Syndrome (PCOS)"
+        ],
+        "treatment_and_medication":[
+          {
+            "drug_name": "Combined oral contraceptive",
+            "quantity": "1 pack",
+            "frequency": "1 time a day",
+            "duration": "Ongoing"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "patient_id": 4,
+        "doctors_id": [
+          4
+        ],
+        "date": "2024-04-05",
+        "reason": "Evaluation for hyperthyroidism",
+        "symptoms": [
+          "Weight loss",
+          "Rapid heartbeat",
+          "Anxiety"
+        ],
+        "personal_background": [
+          "No significant history"
+        ],
+        "family_background": [
+          "Thyroid disorders"
+        ],
+        "lab_results_id": 4,
+        "physical_test": "Elevated T3 and T4 levels",
+        "external_reports": [
+          "reports.pdf"
+        ],
+        "medical_exams": [
+          "glucose level test"
+        ],
+        "diagnostic": [
+          "Hyperthyroidism"
+        ],
+        "treatment_and_medication":[
+          {
+            "drug_name": "Propylthiouracil (PTU)",
+            "quantity": "90 pills",
+            "concentration": "50mg",
+            "frequency": "3 times a day",
+            "duration": "Ongoing"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "patient_id": 5,
+        "doctors_id": [
+          1
+        ],
+        "date": "2024-05-20",
+        "reason": "Evaluation for adrenal insufficiency",
+        "symptoms": [
+          "Fatigue",
+          "Weakness",
+          "Dizziness"
+        ],
+        "personal_background": [
+          "Asthma"
+        ],
+        "family_background": [
+          "No significant history"
+        ],
+        "lab_results_id": 5,
+        "physical_test": "Low cortisol levels",
+        "external_reports": [
+          "reports.pdf"
+        ],
+        "medical_exams": [
+          "testosterone level test"
+        ],
+        "diagnostic": [
+          "Adrenal Insufficiency"
+        ],
+        "treatment_and_medication":[
+          {
+            "drug_name": "Hydrocortisone",
+            "quantity": "30 pills",
+            "concentration": "10mg",
+            "frequency": "2 times a day",
+            "duration": "Ongoing"
+          }
+        ]
+      }
+    ],
+    "lab_result": [
+      {
+        "id": 1,
+        "patient_id": 1,
+        "lab_id": 1,
+        "results": [
+          {
+            "file": "result1.pdf"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "patient_id": 2,
+        "lab_id": 2,
+        "results": [
+          {
+            "file": "result2.pdf"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "patient_id": 3,
+        "lab_id": 3,
+        "results": [
+          {
+            "file": "result3.pdf"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "patient_id": 4,
+        "lab_id": 4,
+        "results": [
+          {
+            "file": "result4.pdf"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "patient_id": 5,
+        "lab_id": 1,
+        "results": [
+          {
+            "file": "result5.pdf"
+          }
+        ]
+      }
+    ],
+    "lab": [
+      {
+        "id": 1,
+        "name": "Lab1"
+      },
+      {
+        "id": 2,
+        "name": "Lab2"
+      },
+      {
+        "id": 3,
+        "name": "Lab3"
+      },
+      {
+        "id": 4,
+        "name": "Lab4"
+      }
+    ],
+  
+    "notification": [
+      {
+        "id": 1,
+        "title": "New patient",
+        "description": "A new patient has been added"
+      },
+      {
+        "id": 2,
+        "title": "New lab result",
+        "description": "New lab results are available"
+      },
+      {
+        "id": 3,
+        "title": "New prescription",
+        "description": "There is a new prescription available"
+      },
+      {
+        "id": 4,
+        "title": "Appointment Reminder",
+        "description": "Reminder: You have an upcoming appointment on [date] at [time]"
+      },
+      {
+        "id": 5,
+        "title": "Treatment Plan Update",
+        "description": "Your treatment plan has been updated"
+      },
+      {
+        "id": 6,
+        "title": "Medication Refill Reminder",
+        "description": "Reminder: Your medication refill is due soon"
+      }
+    ]
+  }
+  
