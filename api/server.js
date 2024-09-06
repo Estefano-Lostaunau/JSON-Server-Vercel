@@ -1,19 +1,31 @@
 // See https://github.com/typicode/json-server#module
-const jsonServer = require('json-server')
-const server = jsonServer.create()
-const router = jsonServer.router('db.json')
-const middlewares = jsonServer.defaults()
+const jsonServer = require('json-server');
+const server = jsonServer.create();
+const router = jsonServer.router('db.json');
+const middlewares = jsonServer.defaults();
 
-server.use(middlewares)
-// Add this before server.use(router)
+server.use(middlewares);
+server.use(jsonServer.bodyParser);
+
+// Rewriter rules
 server.use(jsonServer.rewriter({
     '/api/*': '/$1',
     '/product/:resource/:id/show': '/:resource/:id'
-}))
-server.use(router)
-server.listen(3000, () => {
-    console.log('JSON Server is running')
-})
+}));
 
-// Export the Server API
-module.exports = server
+// Allow write operations
+server.use((req, res, next) => {
+    if (['POST', 'PUT', 'PATCH', 'DELETE'].includes(req.method)) {
+        next();
+    } else {
+        next();
+    }
+});
+
+server.use(router);
+
+server.listen(3000, () => {
+    console.log('JSON Server is running');
+});
+
+module.exports = server;
