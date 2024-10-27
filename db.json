@@ -70,9 +70,9 @@
       "tcea": 16.449578876125194,
       "commission": 150,
       "status": "En Progreso",
-      "portfolios_id": 1,
       "initial_costs": "{Fotocopias:22%, Gastos registrales:22%}",
-      "final_costs": "{Fotocopias:22%}"
+      "final_costs": "{Fotocopias:22%}",
+      "portfolios_id": 1
     },
     {
       "id": 2,
@@ -94,9 +94,9 @@
       "tcea": 23.228210006831375,
       "commission": 250,
       "status": "Completado",
-      "portfolios_id": 1,
       "initial_costs": "{Portes:0, Fotocopias:3%}",
-      "final_costs": "{Portes:0}"
+      "final_costs": "{Portes:0}",
+      "portfolios_id": 1
     },
     {
       "id": 3,
@@ -118,9 +118,9 @@
       "tcea": 17.40767999749091,
       "commission": 100,
       "status": "En Progreso",
-      "portfolios_id": 2,
       "initial_costs": "{Portes:0, Fotocopias:3%}",
-      "final_costs": "{Portes:0}"
+      "final_costs": "{Portes:0}",
+      "portfolios_id": 2
     },
     {
       "id": 4,
@@ -142,9 +142,9 @@
       "tcea": 1.130035467097401,
       "commission": 200,
       "status": "Completado",
-      "portfolios_id": 3,
       "initial_costs": "{Portes:0, Fotocopias:3%}",
-      "final_costs": "{Portes:0}"
+      "final_costs": "{Portes:0}",
+      "portfolios_id": 3
     },
     {
       "id": 5,
@@ -166,9 +166,9 @@
       "tcea": 26.48315786195541,
       "commission": 500,
       "status": "Completado",
-      "portfolios_id": 4,
       "initial_costs": "{Portes:0, Fotocopias:3%}",
-      "final_costs": "{Portes:0}"
+      "final_costs": "{Portes:0}",
+      "portfolios_id": 4
     },
     {
       "id": 6,
@@ -190,9 +190,9 @@
       "tcea": 33.84138483325898,
       "commission": 0.01,
       "status": "Completado",
-      "portfolios_id": 5,
       "initial_costs": "{Portes:0, Fotocopias:3%}",
-      "final_costs": "{Portes:0}"
+      "final_costs": "{Portes:0}",
+      "portfolios_id": 5
     }
   ]
 }
