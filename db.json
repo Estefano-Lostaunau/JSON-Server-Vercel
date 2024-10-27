@@ -71,7 +71,8 @@
       "commission": 150,
       "status": "En Progreso",
       "portfolios_id": 1,
-      "currecy": "USD"
+      "initial_costs": "{Fotocopias:22%, Gastos registrales:22%}",
+      "final_costs": "{Fotocopias:22%}"
     },
     {
       "id": 2,
@@ -94,7 +95,8 @@
       "commission": 250,
       "status": "Completado",
       "portfolios_id": 1,
-      "currecy": "USD"
+      "initial_costs": "{Portes:0, Fotocopias:3%}",
+      "final_costs": "{Portes:0}"
     },
     {
       "id": 3,
@@ -117,7 +119,8 @@
       "commission": 100,
       "status": "En Progreso",
       "portfolios_id": 2,
-      "currecy": "PEN"
+      "initial_costs": "{Portes:0, Fotocopias:3%}",
+      "final_costs": "{Portes:0}"
     },
     {
       "id": 4,
@@ -140,7 +143,8 @@
       "commission": 200,
       "status": "Completado",
       "portfolios_id": 3,
-      "currecy": "EUR"
+      "initial_costs": "{Portes:0, Fotocopias:3%}",
+      "final_costs": "{Portes:0}"
     },
     {
       "id": 5,
@@ -163,7 +167,8 @@
       "commission": 500,
       "status": "Completado",
       "portfolios_id": 4,
-      "currecy": "EUR"
+      "initial_costs": "{Portes:0, Fotocopias:3%}",
+      "final_costs": "{Portes:0}"
     },
     {
       "id": 6,
@@ -186,7 +191,8 @@
       "commission": 0.01,
       "status": "Completado",
       "portfolios_id": 5,
-      "currecy": "USD"
+      "initial_costs": "{Portes:0, Fotocopias:3%}",
+      "final_costs": "{Portes:0}"
     }
   ]
 }
